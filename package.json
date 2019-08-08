@@ -1,0 +1,11 @@
+{
+	"name": "@elf/utils",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/christiandrey/utils.git",
+	"author": "Christian Dréy <oluwaseun.adedire@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"typescript": "^3.5.3"
+	}
+}
