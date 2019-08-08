@@ -1,16 +1,12 @@
 {
 	"name": "@elf/utils",
-	"version": "1.0.1-alpha",
-	"main": "index.ts",
+	"version": "1.0.2-alpha",
+	"main": "index.js",
 	"repository": "https://github.com/christiandrey/utils.git",
 	"author": "Christian Dréy <oluwaseun.adedire@gmail.com>",
 	"license": "MIT",
 	"devDependencies": {
 		"typescript": "^3.5.3"
 	},
-	"files": [
-		"index.d.ts",
-		"src/"
-	],
 	"types": "index.d.ts"
 }
