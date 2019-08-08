@@ -1,6 +1,6 @@
 {
 	"name": "@elf/utils",
-	"version": "1.0.3-alpha",
+	"version": "1.0.4-alpha",
 	"main": "index.ts",
 	"repository": "https://github.com/christiandrey/utils.git",
 	"author": "Christian Dréy <oluwaseun.adedire@gmail.com>",

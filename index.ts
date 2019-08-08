@@ -1,1 +1,9 @@
 export { ApiResponsePagination } from "./src/classes/ApiResponsePagination";
+export { ApiResponseMeta } from "./src/classes/ApiResponseMeta";
+export { ApiResponseError } from "./src/classes/ApiResponseError";
+export { ApiResponse } from "./src/classes/ApiResponse";
+export { HttpResponse } from "./src/classes/HttpResponse";
+export { HttpStatusCodes } from "./src/constants/HttpStatusCodes";
+export { isEmail } from "./src/methods/methods";
+export { loadTsClassesFromDirectory } from "./src/methods/methods";
+export { HttpRequestType } from "./src/types/types";
