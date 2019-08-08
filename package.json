@@ -1,10 +1,13 @@
 {
-	"name": "@elf/utils",
-	"version": "1.0.5-alpha",
-	"main": "index.ts",
+	"name": "elf-utils",
+	"version": "1.0.6-alpha",
+	"main": "index.js",
 	"repository": "https://github.com/christiandrey/utils.git",
 	"author": "Christian Dréy <oluwaseun.adedire@gmail.com>",
 	"license": "MIT",
+	"scripts": {
+		"build": "yarn tsc --target es5 --declaration index.ts"
+	},
 	"devDependencies": {
 		"@types/node": "^12.7.1",
 		"typescript": "^3.5.3"
