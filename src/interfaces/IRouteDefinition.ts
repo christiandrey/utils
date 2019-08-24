@@ -6,6 +6,7 @@ export interface IRouteDefinition {
 	requestType: HttpRequestType;
 	authorize: boolean;
 	allowAnonymous: boolean;
+	checkPermissions?: boolean;
 	users?: Array<string>;
 	roles?: Array<string>;
 }
