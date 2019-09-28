@@ -1,7 +1,7 @@
 import "reflect-metadata";
 import * as glob from "glob";
 import * as path from "path";
-import { ROUTES_METADATA_KEY } from "../constants";
+import { ROUTES_METADATA_KEY, PREFIX_AUTH_METADATA_KEY } from "../constants";
 import { HttpRequestType } from "../types";
 import { IRouteDefinition } from "../interfaces/IRouteDefinition";
 
@@ -28,12 +28,17 @@ export const updateRoutesMetadata = (requestType: HttpRequestType, path: string,
 	initializeRoutesMetadata(target);
 
 	const routes = Reflect.getMetadata(ROUTES_METADATA_KEY, target) as Array<IRouteDefinition>;
+	const prefixAuth = Reflect.getMetadata(PREFIX_AUTH_METADATA_KEY, target) as boolean;
 	const index = routes.findIndex(o => o.action === propertyName);
 	const payload = {
 		path,
 		requestType,
 		action: propertyName
 	} as IRouteDefinition;
+
+	if (!!prefixAuth) {
+		payload.authorize = true;
+	}
 
 	if (index < 0) {
 		routes.push(payload);

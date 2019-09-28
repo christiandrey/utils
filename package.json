@@ -1,6 +1,6 @@
 {
 	"name": "elf-utils",
-	"version": "1.0.7-alpha",
+	"version": "1.0.8-alpha",
 	"main": "index.js",
 	"repository": "https://github.com/christiandrey/utils.git",
 	"author": "Christian Dréy <oluwaseun.adedire@gmail.com>",
