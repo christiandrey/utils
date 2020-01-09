@@ -1,19 +1,22 @@
 {
-	"name": "elf-utils",
-	"version": "1.0.8-alpha",
-	"main": "index.js",
-	"repository": "https://github.com/christiandrey/utils.git",
-	"author": "Christian Dréy <oluwaseun.adedire@gmail.com>",
-	"license": "MIT",
-	"scripts": {
-		"build": "yarn tsc --target es5 --declaration index.ts"
-	},
-	"devDependencies": {
-		"@types/node": "^12.7.1",
-		"typescript": "^3.5.3"
-	},
-	"dependencies": {
-		"glob": "^7.1.4",
-		"reflect-metadata": "^0.1.13"
-	}
+  "name": "elf-utils",
+  "version": "1.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/christiandrey/utils.git",
+  "author": "Christian Dréy <oluwaseun.adedire@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn tsc --target es5 --declaration index.ts"
+  },
+  "devDependencies": {
+    "reflect-metadata": "0.1.x",
+    "@types/node": "^12.7.1",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "glob": "^7.1.4"
+  },
+  "peerDependencies": {
+    "reflect-metadata": "0.1.x"
+  }
 }
